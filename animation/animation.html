@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            height:60px;
+            animation-name:moving;
+            padding:20px;
+            /* animation-duration: 3s;
+            animation-direction: nomal;
+            animation-iteration-count:infinite; */
+
+            text-align: center;
+            animation:moving 2s infinite alternate;
+        }
+        @keyframes moving {
+            from{
+                margin-top:500px;
+                margin-left:300px;
+                padding:20px;
+                width:300px;
+                background:yellow;
+                opacity: 0.5;
+                transform:scale(0.5) rotate(30deg);
+            }
+
+            to{
+                width:400px;
+                background-color: orange;
+                opacity:1;
+                transform:scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>CSS3 Animation</h3>
+    </div>
+</body>
+</html>
