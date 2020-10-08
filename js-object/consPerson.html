@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수로 객체 만들기</title>
+</head>
+<body>
+    <script>
+        //일반적인 객체
+        function Person(name,age,ismerried){
+            this.name = name;   //속성 초기화(매개변수로 저장)
+            this.age = age;     
+            this.ismerried = ismerried;
+             this.info=function(){
+                alert( "이름은 " +this.name+"이고 ,나이는 "+this.age+"입니다.");
+             }
+
+        }
+        var chu = new Person('추신수',38,true);
+        console.log("이름 : "+chu.name);
+        console.log("나이 : "+chu.age);
+        console.log("기혼여부 : "+chu.ismerried);
+        chu.info();
+
+        var son = new Person('손흥민',28,false);
+        console.log("이름 :"+son.name);
+        console.log("나이 :"+son.age);
+        console.log("기혼여부 :"+son.ismerried);
+        son.info();
+    </script>
+</body>
+</html>

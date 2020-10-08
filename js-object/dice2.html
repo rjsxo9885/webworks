@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위 던지기</title>
+</head>
+<body>
+    <script>
+        //주사위 2개 만들기 -10번 던지기
+        for(var i=0; i<10; i++){
+        
+        var dice1 = Math.floor(Math.random()*6)+1;
+        var dice2 = Math.floor(Math.random()*6)+1;
+        var total = dice1 + dice2;
+        
+        console.log(total);
+
+        if(total == 7){
+            console.log("seven Thrown!!");
+        }else if(total==11){
+            console.log("Eleven Thrown");
+        }else if(dice1 == dice2){
+            console.log("Double Thrown");
+        }
+        }
+
+        
+        //두 눈의 합이 7이면 "seven Thrown!!"
+        //두 눈의 합이 11이면 "Eleven Thrown"
+        //두 눈의 수가 같으면 "Double Thrown"
+        
+        
+    </script>
+</body>
+</html>

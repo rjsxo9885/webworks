@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       //주사위 만들기
+        // function dice(){        
+        //     return Math.floor(Math.random()*6)+1;
+        // }
+        var dice = function(){ //방법 2 - 이름없는 함수
+            return Math.floor(Math.random()*6)+1;
+        }
+        for(var i=0; i<10; i++){ //주사위 10번 던지기 
+            // console.log(dice());
+            document.write(dice()+"<br>");
+        }
+        
+   </script>
+        
+</body>
+</html>
