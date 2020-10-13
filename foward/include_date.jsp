@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page import="java.util.Date" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인클루드</title>
+</head>
+<body>
+<h2>오늘의 날짜</h2>
+
+<%
+	Date date = new Date();
+%>
+
+<%=date %>
+
+</body>
+</html>
